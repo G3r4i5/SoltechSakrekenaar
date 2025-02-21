@@ -21,15 +21,16 @@ verlaat = ""
 
 # Opsies waarvan die gebruiker kan kies:
 def opsies():
-    print("1 --> Plus +")
-    print("2 --> Minus -")
-    print("3 --> Maal *")
-    print("4 --> Deel /")
+    print("Wat wil u doen? Bv. vir maal, kies '3'")
+    print("Plus + --> 1")
+    print("Minus --> 2")
+    print("Maal * --> 3")
+    print("Deel / --> 4")
     # Die volgende is uitgecomment omdat dit die program te ingewikkeld sou maak.
     # print("5 --> \'n Nommer")
     # print("d --> Vee uit")
     # print("e --> Gaan terug/Kies \'n ander opsie")
-    print("v --> Verlaat")
+    print("Verlaat --> v")
     print("========================================")
     kies = input("Keuse: ")
     return kies
@@ -76,10 +77,12 @@ while verlaat != "n":
         # Om die program te verlaat.
         verlaat = input("Wil u aangaan? (ja/nee): ")
         if verlaat == "n" or verlaat == "nee" or verlaat == "Nee":
+            print("=================KOEBAAI================")
             verlaat = "n"
-        elif verlaat == "j" or verlaat == "ja" or verlaat == "Ja" or verlaat == "y":
+        elif verlaat == "j" or verlaat == "ja" or verlaat == "Ja" or verlaat == "y" or verlaat == "v":
             print("========================================")
     elif keuse == "v":
+        print("=================KOEBAAI================")
         break
     else:
         print("Keuse nie toegelaat nie. Probeer weer.")
